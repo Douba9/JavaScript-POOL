@@ -15,7 +15,7 @@ app.get(`/name/:name`, (req, res) => {
 
 app.get('/name/', (req, res) => {
     res.render(`name`, {name: "unknown"});
-})
+});
   
 app.listen(config.port, () => {
     console.log(`listen on [ip: ${config.ip}] - [port: ${config.port}]`);
